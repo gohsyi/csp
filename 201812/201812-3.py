@@ -68,7 +68,7 @@ def main():
         if a[1] == b[1] and legal(a_) and merge_equal(a, b, a_):
             ip_list2[ia] = a_
             next[ia] = next[i]
-            prev[next[i]] = ia
+            prev[i + 1] = ia
 
     i = 0
     while i >= 0:
